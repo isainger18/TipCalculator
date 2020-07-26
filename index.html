@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="box">
+        <div class="container">
+            <h1 id="tipHeading">Tip Calculator</h1>
+               <div id="inputArea">
+            <label for="tipCalc">How much was your Bill</label>
+            <i class="fa fa-rupee"></i>
+            <input type="text" name="tipCalc" class="input" onkeypress="allowNumbersOnly(event)" id="tipCalc" placeholder="Enter Bill Amount">
+        </div>
+        <div id="selectionArea">
+            <label for="cars">How was your Service?</label>
+            <select id="billPercent" class="input" name="service" class="billPercent">
+                <option selected disabled value="chooseBill">--Choose Option--</option>
+                <option value="0.05">5%-Terrible</option>
+                <option value="0.1">10%-Bad</option>
+                <option value="0.15">15%-Good</option>
+                <option value="0.2">20%-Excellent</option>
+              </select>
+            </div>
+            <div id="totalPeople">
+              <label for="billPeople">How many people Sharing Bill</label>
+              <input type="text" name="billPeople" class="input" id="billPeople" onkeypress="allowNumbersOnly(event)" placeholder="Enter No. of people">
+            </div>
+            <button type="submit" class="btn">Calculate</button>
+      
+        <div id="result"><div>
+    </div>
+        </section>
+</body>
+<script src="app.js"></script>
+</html>

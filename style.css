@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #611d12 ;
+}
+#box{
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+   border-radius: 20px;
+    background-color: #f7f7f7;
+    position: relative;
+    top:20%;
+    overflow: hidden;
+    
+   }
+   #tipHeading{
+    background-color: #1c050c;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+     }
+#inputArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin-top: 2rem;
+}
+#inputArea > .tipCalc  .fa {
+    flex: 1 0 50%;
+}
+
+#inputArea>label:first-child {
+    flex: 0 1 100%;
+  }
+  #inputArea label{
+    padding-bottom: 5px;
+  }
+ 
+  #selectionArea{
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      position: relative;
+  }
+  .fa, .tipCalc{
+      padding: 5px;
+  }
+  .service{
+      padding: 5px;
+      margin: 10px;
+  }
+  #totalPeople{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    position: relative;
+  }
+  #billPeople{
+
+    padding: 5px;
+    margin: 10px;
+  }
+  .btn {
+    background-color: #9f283d;
+    color: white;
+    width: 39%;
+    padding: 10px;
+  }
+  .result{
+      visibility: hidden;
+  }
+  .myStyle{
+      padding: 20px;
+      visibility: visible;
+      
+  }
